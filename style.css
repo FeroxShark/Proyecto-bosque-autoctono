@@ -1,0 +1,163 @@
+/* === Reset de estilos del navegador === */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Estilos generales del body === */
+body {
+    background-color: #ececec;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Esconde el desbordamiento horizontal */
+}
+
+/* === Header === */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+/* === Sección de introducción === */
+#introduction,
+/* === Otras secciones === */
+section {
+    margin: 15px 50px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* CSS para que el footer se mantenga en la parte inferior de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+@keyframes backgroundChange {
+    0%   {background-color: rgb(20, 148, 137);}
+    50%  {background-color: rgb(179, 179, 13);}
+    100%  {background-color: green;}
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    bottom: -100px;
+    transition: bottom 0.5s ease, background-color 0.5s ease;
+    animation: backgroundChange 5s infinite;
+    -webkit-transition: bottom 0.5s ease, background-color 0.5s ease;
+    -moz-transition: bottom 0.5s ease, background-color 0.5s ease;
+    -ms-transition: bottom 0.5s ease, background-color 0.5s ease;
+    -o-transition: bottom 0.5s ease, background-color 0.5s ease;
+}
+
+footer.hidden {
+    animation: backgroundChange 3s infinite;
+    -webkit-animation: backgroundChange 3s infinite;
+}
+
+footer.sticky-green {
+    background-color: #4CAF50;
+    animation: none;
+    -webkit-animation: none;
+    transition: animation 0.5s ease-out;
+}
+
+
+footer:hover {
+    bottom: 0;
+    background-color: #4CAF50;
+    transition: bottom 0.3s ease;
+}
+
+/* === Plant Row === */
+.plant-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+  }
+
+/* === Plant Block === */
+.plant-block {
+    margin-top: 15px;
+    margin-inline-start: 8px;
+    padding: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+/* === Plant Block Hover y Active States === */
+.plant-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plant-block.active {
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* === Clases para manipular visibilidad === */
+.hidden {
+    display: none;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* === Animación para mostrar información de la planta === */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.show {
+    animation: slideDown 0.3s ease;
+}
+
+/* Improved animations for plant-block */
+.plant-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header.scrolled-down {
+    background-color: rgba(76, 175, 80, 0.7);
+}
