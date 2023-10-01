@@ -3,44 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tu Página</title>
+  <title>Proyecto Bosque Autóctono</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link href="output.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-200">
+  
   <!-- Header -->
-  <header class="bg-green-500 p-4 text-white">
-    <h1>Encabezado</h1>
-  </header>
-
+  <header id="main-header" class="bg-green-600 text-white text-center p-4 w-full z-50 transition-all ease-in-out duration-300">
+    <h1 class="text-xl">
+      Proyecto Bosque Autóctono
+    </h1>
+    <p>
+      Impulsado por el Instituto Secundario General Levalle
+    </p>
+  </header>  
+  
   <!-- Introducción -->
-  <section class="p-4">
-    <h2>Introducción</h2>
-    <p>Texto de introducción aquí.</p>
+  <section class="my-4 mx-72 mx-[200px] pt-2 pr-4 pb-4 pl-4 bg-white rounded-lg">
+    <h2 class="text-2xl font-bold "">Introducción</h2>
+    <p>Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, aspiramos a restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
+    <section id="updates" class="pt-2 bg-white rounded-lg text-lg font-sans">
+      <h2 class="text-2xl font-bold">Cambios realizados en 2023</h2>
+      <div class="section-separator">
+      </div>
+
+      <ul class="list-disc pl-5">
+        <li>
+          Agregamos un chañar
+        </li>
+        <li>
+          Agregamos espinillo
+        </li>
+        <li>
+          Hicimos un relevamiento del estado del bosque
+        </li>
+      </ul>
+    </section>
   </section>
 
-  <h1>Plantas destacadas</h1>
-  <section id="slider" class="relative max-w-screen-md w-full h-72 mx-auto bg-gray-100 p-4 overflow-hidden">
-    <img id="slider-img-0" src="aaaa1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
-    <img id="slider-img-1" src="aaaa2.jpeg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
-    <img id="slider-img-2" src="aaa3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
-    <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
-      <div class="bg-white w-4 h-1 rounded cursor-pointer" onclick="navigateTo(0)"></div>
-      <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(1)"></div>
-      <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(2)"></div>
-    </div>
-    <button id="prev-button" class="absolute top-1/2 left-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
-      <span class="text-green-500">←</span>
-    </button>
-    <button id="next-button" class="absolute top-1/2 right-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
-      <span class="text-green-500">→</span>
-    </button>      
+  <section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
+      <h1 class="text-center font-bold text-6xl pb-4">Plantas destacadas</h1>
+      <section id="slider" class="relative max-w-screen-lg w-full h-96 mx-auto bg-gray-100 overflow-hidden rounded-3xl -ml-8 -mr-8">
+      <img id="slider-img-0" src="aaaa1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
+      <img id="slider-img-1" src="aaaa2.jpeg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
+      <img id="slider-img-2" src="aaa3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
+      <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
+        <div class="bg-white w-4 h-1 rounded cursor-pointer" onclick="navigateTo(0)"></div>
+        <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(1)"></div>
+        <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(2)"></div>
+      </div>
+      <button id="prev-button" class="absolute top-1/2 left-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+        <span class="text-green-500">←</span>
+      </button>
+      <button id="next-button" class="absolute top-1/2 right-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+        <span class="text-green-500">→</span>
+      </button>
+    </section>
   </section>
   
-
   <!-- Grid de Cuadrados -->
-  <h1 class="text-4xl font-bold text-gray-800">Todas las plantas</h1>
+  <section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
+  <h1 class="text-center font-bold text-6xl pb-4">Todas las plantas</h1>
   <section class="grid grid-cols-4 gap-4 px-24">
       <div class="h-32 bg-cover rounded-2xl bg-center flex items-center justify-center plant-1">
           <p class="text-white text-shadow bg-opacity-50 bg-black rounded px-1">Algarrobo Blanco</p>
@@ -94,14 +119,53 @@
           <p class="text-white text-shadow bg-opacity-50 bg-black rounded px-1">Chaña</p>
       </div>
     </section>
-    
-  <section>
-    <p>La Profesora Silvia Armendariz en unas sentidas palabras expone: ...."Ustedes se preguntaran porque los realizamos" porque el menosprecio del paisaje nativo contribuye descolonización y desaparición del mundo, porque el hombre está acabando con los bosques nativos para la obtención de madera, leña y carbón, porque si concientizamos a la población de la importancia de la flora autóctona de la Argentina lograremos preservarla; "lo realizamos para revalorizar la existencia de flora autóctona y difundir su importancia".</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-500 p-4 text-white">
-    Pie de página
-  </footer>
+<section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
+  <h3 class="text-lg font-semibold mb-2">Palabras de la Profesora Silvina Armendariz</h3>
+  <blockquote class="border-l-4 border-gray-400 pl-4 italic">
+    <p class="mb-2">"Ustedes se preguntarán por qué lo realizamos: porque el menosprecio del paisaje nativo contribuye a la descolonización y desaparición del mundo, porque el hombre está acabando con los bosques nativos para la obtención de madera, leña y carbón. Si concientizamos a la población de la importancia de la flora autóctona de la Argentina, lograremos preservarla. Lo realizamos para revalorizar la existencia de flora autóctona y difundir su importancia."</p>
+    <footer class="text-right">- Silvina Armendariz</footer>
+  </blockquote>
+</section>
+
+<!-- Footer -->
+<footer id="footer-template" class="bg-green-500 text-white p-4 sticky bottom-[-100px] transition-all duration-500 ease-in-out">
+  <div class="container mx-auto max-w-screen-lg flex justify-between">
+    <!-- Info de la Escuela -->
+    <div class="text-left">
+      <p class="mb-1">Promoción 2023, Instituto Secundario General Levalle, Córdoba, Argentina</p>
+      <p class="mb-1">
+        Contacto:
+        <a href="mailto:instglevalle@gmail.com" class="text-white underline">
+          instglevalle@gmail.com
+        </a>
+        | Teléfono: 03385 48-0108
+      </p>
+      <p class="mb-1">Ubicación: Mariano Moreno 271, General Levalle, Argentina</p>
+      <p class="mb-1">
+        Redes Sociales:
+        <a href="https://www.instagram.com/instglevalle/" target="_blank" rel="noopener" class="text-white underline">
+          Instagram
+        </a>
+        |
+        <a href="https://web.facebook.com/instituto.secundario" target="_blank" rel="noopener" class="text-white underline">
+          Facebook
+        </a>
+      </p>
+    </div>
+    
+    <!-- Tu Info -->
+    <div class="text-right">
+      <p class="mb-1">Diseñado y Desarrollado por FeroxShark</p>
+      <p class="mb-1">
+        GitHub:
+        <a href="https://github.com/FeroxShark" target="_blank" rel="noopener" class="text-white underline">
+          FeroxShark
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
