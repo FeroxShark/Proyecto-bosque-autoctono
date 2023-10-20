@@ -1,72 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proyecto Bosque Autóctono</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto Bosque Autóctono</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-200">
   
-  <!-- Header -->
-  <header id="main-header" class="font-bold bg-green-600 text-white text-center p-4 w-full z-50 transition-all ease-in-out duration-300">
-    <h1 class="text-xl">
-      Proyecto Bosque Autóctono
-    </h1>
-    <p>
-      Impulsado por el Instituto Secundario General Levalle
-    </p>
-  </header>  
-  
-  <!-- Introducción -->
-  <section class="my-4 mx-72 mx-[200px] pt-2 pr-4 pb-4 pl-4 bg-white rounded-lg">
-    <h2 class="text-2xl font-bold "">Introducción</h2>
-    <p>Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, aspiramos a restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
-    <section id="updates" class="pt-2 bg-white rounded-lg text-lg font-sans">
-      <h2 class="text-2xl font-bold">Cambios realizados en 2023</h2>
-      <div class="section-separator">
-      </div>
+    <!-- Header -->
+    <header id="main-header" class="shadow-md font-bold bg-green-600 text-white text-center p-4 w-full z-50 transition-all ease-in-out duration-300">
+      <h1 class="text-xl">
+            Proyecto Bosque Autóctono
+        </h1>
+        <p>
+            Impulsado por el Instituto Secundario General Levalle
+        </p>
+    </header>
 
-      <ul class="list-disc pl-5">
-        <li>
-          Agregamos un chañar
-        </li>
-        <li>
-          Agregamos espinillo
-        </li>
-        <li>
-          Hicimos un relevamiento del estado del bosque
-        </li>
-      </ul>
-    </section>
-  </section>
-
-  <section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
-      <h1 class="text-center font-bold text-6xl pb-4">Plantas destacadas</h1>
-      <section id="slider" class="relative max-w-screen-lg w-full h-96 mx-auto bg-gray-100 overflow-hidden rounded-3xl -ml-8 -mr-8">
-      <img id="slider-img-0" src="aaaa1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
-      <img id="slider-img-1" src="aaaa2.jpeg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
-      <img id="slider-img-2" src="aaa3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
-      <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
-        <div class="bg-white w-4 h-1 rounded cursor-pointer" onclick="navigateTo(0)"></div>
-        <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(1)"></div>
-        <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(2)"></div>
-      </div>
-      <button id="prev-button" class="absolute top-1/2 left-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
-        <span class="text-green-500">←</span>
-      </button>
-      <button id="next-button" class="absolute top-1/2 right-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
-        <span class="text-green-500">→</span>
-      </button>
-    </section>
-  </section>
+    <!-- Contenido Principal -->
+    <main class="my-4 mx-auto max-w-4xl p-4 bg-white rounded-lg shadow-lg">
   
-  <!-- Grid de Cuadrados -->
-  <section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
-  <h1 class="text-center font-bold text-6xl pb-4">Todas las plantas</h1>
-  <section class="grid grid-cols-4 gap-4 px-24">
+        <!-- Introducción -->
+        <section>
+            <h2 class="text-2xl font-bold">Introducción</h2>
+            <p>Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, aspiramos a restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
+        </section>
+        
+        <!-- Cambios Realizados -->
+        <section id="updates" class="pt-4">
+          <h2 class="text-2xl font-bold">Cambios realizados en 2023</h2>
+          <ul class="list-disc pl-5 mt-2">
+              <li>Agregamos un chañar</li>
+              <li>Agregamos espinillo</li>
+              <li>Hicimos un relevamiento del estado del bosque</li>
+          </ul>
+      </section>
+
+      <!-- Plantas Destacadas -->
+      <section class="my-6">
+        <h1 class="font-bold text-4xl text-center py-4">Plantas destacadas</h1>
+        <div id="slider" class="relative max-w-screen-lg w-full h-96 mx-auto bg-gray-100 overflow-hidden rounded-lg">
+          <img id="slider-img-0" src="aaaa1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
+          <img id="slider-img-1" src="aaaa2.jpeg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
+          <img id="slider-img-2" src="aaa3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
+          <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
+              <div class="bg-white w-4 h-1 rounded cursor-pointer" onclick="navigateTo(0)"></div>
+              <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(1)"></div>
+              <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(2)"></div>
+          </div>
+          <button id="prev-button" class="shadow-lg absolute top-1/2 left-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+              <span class="text-green-500">←</span>
+          </button>
+          <button id="next-button" class="shadow-lg absolute top-1/2 right-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+              <span class="text-green-500">→</span>
+          </button>
+          </div>
+      </section>
+  
+<!-- Grid de Cuadrados -->
+<section>
+  <h1 class="font-bold text-4xl text-center py-4">Todas las plantas</h1>
+  <div class="grid grid-cols-4 gap-4">
       <div class="h-32 bg-cover rounded-2xl bg-center flex items-center justify-center plant-1">
           <p class="text-white text-shadow bg-opacity-50 bg-black rounded px-1">Algarrobo Blanco</p>
       </div>
@@ -120,52 +117,43 @@
       </div>
     </section>
   </section>
-
-<section class="my-4 mx-72 mx-[200px] p-4 bg-white rounded-lg">
-  <h3 class="text-lg font-semibold mb-2">Palabras de la Profesora Silvina Armendariz</h3>
-  <blockquote class="border-l-4 border-gray-400 pl-4 italic">
-    <p class="mb-2">"Ustedes se preguntarán por qué lo realizamos: porque el menosprecio del paisaje nativo contribuye a la descolonización y desaparición del mundo, porque el hombre está acabando con los bosques nativos para la obtención de madera, leña y carbón. Si concientizamos a la población de la importancia de la flora autóctona de la Argentina, lograremos preservarla. Lo realizamos para revalorizar la existencia de flora autóctona y difundir su importancia."</p>
-    <footer class="text-right">- Silvina Armendariz</footer>
-  </blockquote>
-</section>
-
-<!-- Footer -->
-<footer id="footer-template" class="bg-green-500 text-white p-4 sticky bottom-[-100px] transition-all duration-500 ease-in-out">
-  <div class="container mx-auto max-w-screen-lg flex justify-between">
-    <!-- Info de la Escuela -->
-    <div class="text-left">
-      <p class="mb-1">Promoción 2023, Instituto Secundario General Levalle, Córdoba, Argentina</p>
-      <p class="mb-1">
-        Contacto:
-        <a href="mailto:instglevalle@gmail.com" class="text-white underline">
-          instglevalle@gmail.com
-        </a>
-        | Teléfono: 03385 48-0108
+  <section class="my-6 mx-auto max-w-screen-xl p-6 bg-white rounded-lg shadow-lg">
+    <h3 class="text-xl font-bold mb-6 text-center">Palabras de la Profesora Silvina Armendariz</h3>
+    <blockquote class="border-l-4 border-gray-400 pl-6 italic mb-4 text-center">
+      <p class="mb-6">"Ustedes se preguntarán por qué lo realizamos: porque el menosprecio del paisaje nativo contribuye a la descolonización y desaparición del mundo, porque el hombre está acabando con los bosques nativos para la obtención de madera, leña y carbón. Si concientizamos a la población de la importancia de la flora autóctona de la Argentina, lograremos preservarla. Lo realizamos para revalorizar la existencia de flora autóctona y difundir su importancia."</p>
+      <p class="opacity-80 text-right">- Silvina Armendariz</p>
+    </blockquote>
+  </section>
+  
+  <!-- Footer -->
+  <footer id="footer-template" class="bg-green-600 text-white py-8">
+    <div class="container mx-auto max-w-screen-lg text-center">
+  
+      <p class="mb-4 font-bold">Promoción 2023, Instituto Secundario General Levalle, Córdoba, Argentina</p>
+      
+      <div class="mb-4 flex justify-center space-x-8">
+        <span>
+          Contacto: <a href="mailto:instglevalle@gmail.com" class="text-white underline hover:text-green-300">instglevalle@gmail.com</a>
+        </span>
+        <span>
+          Teléfono: 03385 48-0108
+        </span>
+      </div>
+  
+      <p class="mb-4">Ubicación: Mariano Moreno 271, General Levalle, Argentina</p>
+      
+      <p class="mb-6">
+        Redes Sociales: 
+        <a href="https://www.instagram.com/instglevalle/" target="_blank" rel="noopener" class="text-white underline hover:text-green-300 ml-2 mr-4">Instagram</a>
+        <a href="https://web.facebook.com/instituto.secundario" target="_blank" rel="noopener" class="text-white underline hover:text-green-300 ml-2">Facebook</a>
       </p>
-      <p class="mb-1">Ubicación: Mariano Moreno 271, General Levalle, Argentina</p>
-      <p class="mb-1">
-        Redes Sociales:
-        <a href="https://www.instagram.com/instglevalle/" target="_blank" rel="noopener" class="text-white underline">
-          Instagram
-        </a>
-        |
-        <a href="https://web.facebook.com/instituto.secundario" target="_blank" rel="noopener" class="text-white underline">
-          Facebook
-        </a>
-      </p>
+  
+      <div>
+        Diseñado y Desarrollado por 
+        <a href="https://github.com/FeroxShark" target="_blank" rel="noopener" class="text-white underline hover:text-green-300">FeroxShark</a>
+      </div>
     </div>
-    
-    <!-- Tu Info -->
-    <div class="text-right">
-      <p class="mb-1">Diseñado y Desarrollado por FeroxShark</p>
-      <p class="mb-1">
-        GitHub:
-        <a href="https://github.com/FeroxShark" target="_blank" rel="noopener" class="text-white underline">
-          FeroxShark
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+  </footer>
+  </body>
+  </html>
+  
