@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Bosque Autóctono</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link href="output.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="description" content="Proyecto Bosque Autóctono de Córdoba, Argentina">
+    <meta name="keywords" content="Bosque, Autóctono, Córdoba, Argentina, Medio ambiente">
+    <meta name="author" content="FeroxShark">
+  </head>
 <body class="bg-gray-200">
   
     <!-- Header -->
@@ -22,15 +22,14 @@
 
     <!-- Contenido Principal -->
     <main class="my-4 mx-auto max-w-4xl p-4 bg-white rounded-lg shadow-lg">
-  
         <!-- Introducción -->
-        <section>
-            <h2 class="text-2xl font-bold">Introducción</h2>
+        <section id="introduccion">
+          <h2 class="text-2xl font-bold">Introducción</h2>
             <p>Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, aspiramos a restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
         </section>
         
         <!-- Cambios Realizados -->
-        <section id="updates" class="pt-4">
+        <section id="updates" class="pt-4"> 
           <h2 class="text-2xl font-bold">Cambios realizados en 2023</h2>
           <ul class="list-disc pl-5 mt-2">
               <li>Agregamos un chañar</li>
@@ -43,18 +42,18 @@
       <section class="my-6">
         <h1 class="font-bold text-4xl text-center py-4">Plantas destacadas</h1>
         <div id="slider" class="relative max-w-screen-lg w-full h-96 mx-auto bg-gray-100 overflow-hidden rounded-lg">
-          <img id="slider-img-0" src="aaaa1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
-          <img id="slider-img-1" src="aaaa2.jpeg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
-          <img id="slider-img-2" src="aaa3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
+          <img id="slider-img-0" src="./Images/slider-1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
+          <img id="slider-img-1" src="./Images/slider-2.jpg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
+          <img id="slider-img-2" src="./Images/slider-3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
           <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
-              <div class="bg-white w-4 h-1 rounded cursor-pointer" onclick="navigateTo(0)"></div>
-              <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(1)"></div>
-              <div class="bg-white bg-opacity-50 w-4 h-1 rounded cursor-pointer" onclick="navigateTo(2)"></div>
+            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(0)"></div>
+            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(1)"></div>
+            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(2)"></div>
           </div>
-          <button id="prev-button" class="shadow-lg absolute top-1/2 left-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+          <button id="prev-button" class="shadow-lg absolute top-1/2 left-4 bg-white bg-opacity-90 rounded-full p-2 z-20">
               <span class="text-green-500">←</span>
           </button>
-          <button id="next-button" class="shadow-lg absolute top-1/2 right-4 bg-white bg-opacity-50 rounded-full p-2 z-20">
+          <button id="next-button" class="shadow-lg absolute top-1/2 right-4 bg-white bg-opacity-90 rounded-full p-2 z-20">
               <span class="text-green-500">→</span>
           </button>
           </div>
@@ -154,6 +153,7 @@
       </div>
     </div>
   </footer>
+  <script src="slider.js"></script>
   </body>
   </html>
   

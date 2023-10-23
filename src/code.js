@@ -42,3 +42,4 @@ document.getElementById('next-button').addEventListener('click', function() {
     let nextImage = (currentImage + 1) % totalImages;
     navigateTo(nextImage);
 });
+

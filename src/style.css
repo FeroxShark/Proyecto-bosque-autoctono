@@ -49,3 +49,8 @@
 .plant-17 {
     background-image: url('./Images/plant-17.jpg');
 }
+
+.shadow-style {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ajusta según lo que necesites */
+}
+
