@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     let currentImage = 0;
     let images = document.querySelectorAll('.slide-image');
@@ -43,3 +47,39 @@ document.getElementById('next-button').addEventListener('click', function() {
     navigateTo(nextImage);
 });
 
+// Toma referencia de los elementos
+const images = document.querySelectorAll(".slide-image");
+const plantNameElement = document.getElementById("plant-name");
+
+// Función que actualiza el nombre de la planta en función de la imagen visible
+function updatePlantName() {
+    for (let i = 0; i < images.length; i++) {
+        if (window.getComputedStyle(images[i]).opacity === "1") {
+            plantNameElement.innerText = "Planta " + (i + 1);
+            break;
+        }
+    }
+}
+
+// Eventos para los botones de navegación
+document.getElementById("prev-button").addEventListener("click", function() {
+    setTimeout(updatePlantName, 600); // Espera la duración de la transición
+});
+document.getElementById("next-button").addEventListener("click", function() {
+    setTimeout(updatePlantName, 600); // Espera la duración de la transición
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(() => {
+      let loadings = document.querySelectorAll('.loading-content');
+      let reals = document.querySelectorAll('.real-content');
+
+      loadings.forEach(loading => {
+          loading.classList.add('hidden');
+      });
+
+      reals.forEach(real => {
+          real.classList.remove('hidden');
+      });
+  }, 1000);
+});

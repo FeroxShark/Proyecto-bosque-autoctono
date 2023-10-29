@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html lang="en">
-  <head>
+  <link>
+    <link rel="icon" href="./Images/logo uwu 2.png" type="image/x-icon" href="favicon.ico"></link>
     <meta charset="UTF-8">
     <title>Proyecto Bosque Autóctono</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
@@ -12,7 +14,7 @@
   
 <!-- Header -->
 <header id="main-header" class="shadow-md font-bold bg-black text-white p-4 w-full z-50 transition-all ease-in-out duration-300 flex items-center">
-  <img src="./Images/logo uwu.png" alt="Logo" class="h-[78px] w-auto ml-4 mr-8">
+  <img src="./Images/logo uwu.png" alt="Logo" class="h-16 w-auto ml-4 mr-8">
   <div class="flex-1 text-center">
     <h1 class="text-xl">
       Proyecto Bosque Autóctono
@@ -24,63 +26,107 @@
 </header>
 
 
+<!-- Contenido Principal -->
+<section class="my-4 mx-max ml-4 mr-4 max-w-full p-4 bg-white rounded-lg shadow-md">
+    <!-- Introducción -->
+    
+    <section id="introduccion" class="mb-12 ml-80 mr-80">
+      <h2 class="text-3xl font-semibold mb-4 border-b-2 border-gray-300 pb-2">Introducción</h2>
+      <p class="text-lg leading-relaxed">Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, buscamos restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
+    </section>
 
-    <!-- Contenido Principal -->
-    <main class="my-4 mx-auto ml-4 mr-4 max-w-full p-4 bg-white rounded-lg shadow-lg">
-        <!-- Introducción -->
-        <section id="introduccion">
-          <h2 class="text-2xl font-bold">Introducción</h2>
-            <p>Iniciado en 1997, el Proyecto Bosque Autóctono representa un esfuerzo sostenido para mitigar el deterioro ambiental en la región de Córdoba, Argentina. A través de la reforestación con especies nativas y actividades educativas, aspiramos a restaurar el equilibrio ecológico y fomentar la conciencia ambiental en la comunidad.</p>
-        </section>
-        
-        <!-- Cambios Realizados -->
-        <section id="updates" class="pt-4"> 
-          <h2 class="text-2xl font-bold">Cambios realizados en 2023</h2>
-          <ul class="list-disc pl-5 mt-2">
-              <li>Agregamos un chañar</li>
-              <li>Agregamos espinillo</li>
-              <li>Hicimos un relevamiento del estado del bosque</li>
-          </ul>
-      </section>
+<!-- Contenido Principal -->
+<div class="flex mb-6 items-center gap-4">
 
-          <!-- Contenido Principal -->
-    <div class="flex mb-6">
-        <!-- Palabras de la Profesora Silvina Armendariz -->
-        <div class="w-1/2 p-4 border">
-            <p>"Ustedes se preguntarán por qué realizamos... y difundir su importancia."</p>
-        </div>
-        
-        <!-- Google Maps Widget -->
-        <div class="w-1/2 p-4 border">
-            <div class="h-64 bg-gray-300">
-                Google maps widget
-            </div>
+  <!-- Quote Section -->
+  <section class="flex-1 bg-gray-100 p-8 rounded-lg transition-all ease-in-out duration-300 transform h-96 hover:shadow-md">
+    <h3 class="text-2xl font-semibold mb-4 text-center">Palabras de Silvina Armendariz</h3>
+    <blockquote class="border-l-4 border-indigo-400 pl-6 italic">
+      <p class="mb-4">"Ustedes se preguntarán por qué lo realizamos: porque el menosprecio del paisaje nativo contribuye a la descolonización y desaparición del mundo. El hombre está acabando con los bosques nativos para obtener madera, leña y carbón. Al concientizar sobre la importancia de la flora autóctona argentina, podemos preservarla. Actuamos para revalorizar y difundir su relevancia."</p>
+      <p class="opacity-80 text-right font-medium">- Silvina Armendariz</p>
+    </blockquote>
+  </section>
+      
+  <!-- Google Maps Widget -->
+  <div class="flex-auto relative overflow-hidden rounded-lg h-96 bg-gray-50 transition-all ease-in-out duration-300 transform h-96 hover:shadow-md">
+    <div class="absolute inset-0 z-10 pointer-events-none"></div>
+    <iframe title="Google Maps" 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1031.4712521689987!2d-63.92995823781175!3d-34.00283652529629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sar!4v1698526696666!5m2!1sen!2sar" 
+          class="w-full h-full rounded-lg pointer-events-none"
+          referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+<!-- Plantas Destacadas -->
+<h1 class="font-bold text-4xl text-center py-4">Plantas destacadas</h1>
+<div class="flex-auto relative shadow-md overflow-hidden rounded-lg h-screen">
+
+    <!-- Planta 1 con Imagen 1 -->
+    <div class="slide-image absolute inset-0 object-cover w-full h-full opacity-0 transition-opacity duration-[600ms] ease-in-out" data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+        <img id="slider-img-0" src="./Images/slider-1.jpg" alt="Imagen 1" class="absolute inset-0 object-cover w-full h-full">
+        <div class="absolute top-4 left-1/2 transform -translate-x-1/2">
+            <span class="text-white font-sans text-4xl font-bold">Planta 1</span>
         </div>
     </div>
 
-    </main>
-      <!-- Plantas Destacadas -->
-      <section class="my-6">
-        <h1 class="font-bold text-4xl text-center py-4">Plantas destacadas</h1>
-        <div id="slider" class="relative max-w-screen-lg w-full h-96 mx-auto bg-gray-100 overflow-hidden rounded-lg">
-          <img id="slider-img-0" src="./Images/slider-1.jpg" alt="Imagen 1" class="slide-image active absolute inset-0 object-cover w-full h-full">
-          <img id="slider-img-1" src="./Images/slider-2.jpg" alt="Imagen 2" class="slide-image absolute inset-0 object-cover w-full h-full">
-          <img id="slider-img-2" src="./Images/slider-3.jpg" alt="Imagen 3" class="slide-image absolute inset-0 object-cover w-full h-full">
-          <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20">
-            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(0)"></div>
-            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(1)"></div>
-            <div class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" onclick="navigateTo(2)"></div>
-          </div>
-          <button id="prev-button" class="shadow-lg absolute top-1/2 left-4 bg-white bg-opacity-90 rounded-full p-2 z-20">
-              <span class="text-green-500">←</span>
-          </button>
-          <button id="next-button" class="shadow-lg absolute top-1/2 right-4 bg-white bg-opacity-90 rounded-full p-2 z-20">
-              <span class="text-green-500">→</span>
-          </button>
-          </div>
-      </section>
-  
-<!-- Grid de Cuadrados -->
+    <!-- Planta 2 con Imagen 2 -->
+    <div class="slide-image absolute inset-0 object-cover w-full h-full opacity-0 transition-opacity duration-[600ms] ease-in-out" data-te-carousel-fade data-te-carousel-item>
+        <img id="slider-img-1" src="./Images/slider-2.jpg" alt="Imagen 2" class="absolute inset-0 object-cover w-full h-full">
+        <div class="absolute top-4 left-1/2 transform -translate-x-1/2">
+            <span class="text-white font-sans text-4xl font-bold">Planta 2</span>
+        </div>
+    </div>
+
+    <!-- Planta 3 con Imagen 3 -->
+    <div class="slide-image absolute inset-0 object-cover w-full h-full opacity-0 transition-opacity duration-[600ms] ease-in-out" data-te-carousel-fade data-te-carousel-item>
+        <img id="slider-img-2" src="./Images/slider-3.jpg" alt="Imagen 3" class="absolute inset-0 object-cover w-full h-full">
+        <div class="absolute top-4 left-1/2 transform -translate-x-1/2">
+            <span class="text-white font-sans text-4xl font-bold">Planta 3</span>
+        </div>
+    </div>
+
+    <!-- Indicators -->
+    <div id="slider-bars" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 space-x-2 flex z-20" data-te-carousel-indicators>
+        <button class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" data-te-target="#slider" data-te-slide-to="0" aria-label="Slide 1"></button>
+        <button class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" data-te-target="#slider" data-te-slide-to="1" aria-label="Slide 2"></button>
+        <button class="bg-green-500 bg-opacity-90 w-4 h-1 rounded cursor-pointer shadow-style" data-te-target="#slider" data-te-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <!-- Prev and Next Buttons -->
+    <button id="prev-button" class="shadow-lg absolute top-1/2 left-4 bg-white bg-opacity-90 rounded-full p-2 z-20" data-te-target="#slider" data-te-slide="prev">
+        <span class="text-green-500">←</span>
+    </button>
+    <button id="next-button" class="shadow-lg absolute top-1/2 right-4 bg-white bg-opacity-90 rounded-full p-2 z-20" data-te-target="#slider" data-te-slide="next">
+        <span class="text-green-500">→</span>
+    </button>
+</div>
+
+    
+    </section>
+      <section id="updates" class="mb-6 flex flex-col items-center bg-gradient-to-r from-purple-500 to-blue-600 p-6 shadow-2xl">
+        <h2 class="text-3xl font-semibold mb-4 text-white">Cambios realizados en 2023</h2>
+        <ul class="list-none pl-0 text-lg space-y-4">
+            <li class="transition-transform transform hover:scale-105">
+                <div class="p-4 bg-opacity-20 bg-white rounded-lg shadow-lg hover:shadow-2xl cursor-pointer">
+                    Agregamos un chañar
+                </div>
+            </li>
+            <li class="transition-transform transform hover:scale-105">
+                <div class="p-4 bg-opacity-20 bg-white rounded-lg shadow-lg hover:shadow-2xl cursor-pointer">
+                    Agregamos espinillo
+                </div>
+            </li>
+            <li class="transition-transform transform hover:scale-105">
+                <div class="p-4 bg-opacity-20 bg-white rounded-lg shadow-lg hover:shadow-2xl cursor-pointer">
+                    Hicimos un relevamiento del estado del bosque
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    
+
+<!-- Grid de Cuadrados 
 <section>
   <h1 class="font-bold text-4xl text-center py-4">Todas las plantas</h1>
   <div class="grid grid-cols-4 gap-4">
@@ -137,13 +183,7 @@
       </div>
     </section>
   </section>
-  <section class="my-6 mx-auto max-w-screen-xl p-6 bg-white rounded-lg shadow-lg">
-    <h3 class="text-xl font-bold mb-6 text-center">Palabras de la Profesora Silvina Armendariz</h3>
-    <blockquote class="border-l-4 border-gray-400 pl-6 italic mb-4 text-center">
-      <p class="mb-6">"Ustedes se preguntarán por qué lo realizamos: porque el menosprecio del paisaje nativo contribuye a la descolonización y desaparición del mundo, porque el hombre está acabando con los bosques nativos para la obtención de madera, leña y carbón. Si concientizamos a la población de la importancia de la flora autóctona de la Argentina, lograremos preservarla. Lo realizamos para revalorizar la existencia de flora autóctona y difundir su importancia."</p>
-      <p class="opacity-80 text-right">- Silvina Armendariz</p>
-    </blockquote>
-  </section>
+-->
   
   <!-- Footer -->
   <footer id="footer-template" class="bg-green-600 text-white py-8">
